@@ -1,0 +1,169 @@
+body
+{
+	padding: 0;
+	margin: 0;
+}
+
+div#news
+{
+	width: 800px;
+	margin: 0 auto;
+}
+
+section.app
+{
+	width: 100%;
+}
+
+h1
+{
+	font-size: 36px;
+	text-align: center;
+	color: brown;
+}
+
+ul.news
+{
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+ul.news>li
+{
+	display: block;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 20px;
+	list-style: none;
+	border: 1px solid #dedede;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+
+ul.news>li>div.container>p.news-author
+{
+	margin: 0 0 20px 0;
+}
+ul.news>li>div.container>p.news-author>span
+{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+ul.news>li>div.container>p.news-text,
+ul.news>li>div.container>p.news-moreText
+{
+	margin: 0;
+	font-size: 14px;
+}
+
+ul.news>li>div.container>button
+{
+	margin: 20px 0 0 0
+}
+
+form
+{
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+form>h2
+{
+	font-size: 20px;
+	color: brown;
+}
+
+form>input.author
+{
+	width: 100%;
+	padding: 10px;
+	margin: 0 0 20px 0;
+	text-align: left;
+	border: 1px solid #dedede;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+
+form>textarea
+{
+	width: 100%;
+	padding: 10px;
+	margin: 0 0 20px 0;
+	text-align: left;
+	border: 1px solid #dedede;
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+
+form>input#agreement
+{
+	position: absolute;
+	opacity: 0;
+}
+
+form>input#agreement:checked ~ label::before
+{
+	border-color: brown;
+}
+form>input#agreement:checked ~ label::after
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+form>label[for='agreement']
+{
+	position: relative;
+	display: block;
+	min-height: 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 20px 0;
+	text-align: left;
+	line-height: 1.2;
+	color: brown;
+}
+
+form>label[for='agreement']::before
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	content: '';
+	border: 2px solid #dedede;
+	box-sizing: border-box;
+	transition: border .3s;
+}
+
+form>label[for='agreement']::after
+{
+	position: absolute;
+	top: 7px;
+	left: 5px;
+	visibility: hidden;
+	opacity: 0;
+	width: 10px;
+	height: 5px;
+	content: '';
+	border-bottom: 2px solid brown;
+	border-left: 2px solid brown;
+	box-sizing: border-box;
+	transform: rotate(-45deg);
+	transition: opacity .3s;
+}
+
+form>button
+{
+	padding: 10px 40px;
+	margin: 0;
+	font-size: 18px;
+	color: #ffffff;
+	background-color: blue;
+	border: none;
+	border-radius: 6px;
+}
